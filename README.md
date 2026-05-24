@@ -75,3 +75,11 @@ poem = await analyzer.analyze_full(
 
 print(poem.translation)  # 译文
 print(poem.artistic_conception)  # 艺术境界
+📊 Token消耗预估
+单首诗词深度分析：约5000+ Tokens
+日均处理50首诗词 = 日均25万+ Tokens
+目标：完成10000首唐宋诗词数字化
+🎓 应用场景
+中小学语文教学辅助
+传统文化数字化传播
+学术研究可视化工具
