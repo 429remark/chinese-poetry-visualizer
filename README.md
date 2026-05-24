@@ -55,3 +55,23 @@ shijing/
 │ └── gallery.py # 诗画长廊
 ├── storage/ # 数据存储
 └── utils/ # 工具类
+
+## 🚀 快速开始
+
+```python
+from shijing.engine.analyzer import PoetryAnalyzer
+
+# 初始化赏析引擎
+analyzer = PoetryAnalyzer("your-mimo-api-key")
+
+# 分析一首诗
+poem = await analyzer.analyze_full(
+    title="登高",
+    author="杜甫",
+    dynasty="唐",
+    content="""风急天高猿啸哀，渚清沙白鸟飞回。
+    无边落木萧萧下，不尽长江滚滚来。"""
+)
+
+print(poem.translation)  # 译文
+print(poem.artistic_conception)  # 艺术境界
